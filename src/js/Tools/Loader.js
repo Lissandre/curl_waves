@@ -192,7 +192,7 @@ export default class Loader extends EventEmitter {
 
       this.loadRessources(this.ressourcesList)
     } else {
-      this.trigger('ressourcesReady')
+      window.onload = () => {this.trigger('ressourcesReady')}
     }
   }
   loadRessources(ressources) {

@@ -32,6 +32,7 @@ export default class World {
   }
   setLoader() {
     this.assets.on('ressourcesReady', () => {
+      console.log('oui');
       this.init()
     })
   }
